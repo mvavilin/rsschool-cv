@@ -16,6 +16,8 @@ I like to study English, do sports and learn something new.
 * VS Code
 
 
+## Experience
+This CV was made as part of the RSSchool training.
 ## Education
 Penza State University
 
