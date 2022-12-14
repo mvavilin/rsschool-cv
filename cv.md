@@ -1,8 +1,8 @@
 # Mikhail Vavilin
 ## Contacts
-* **Location:** Penza, Russia
-* **Telegram:** @mikhailvavilin
-* **Gmail:** michaelvavilin@gmail.com
+- **Location:** Penza, Russia
+- **Telegram:** @mikhailvavilin
+- **Gmail:** michaelvavilin@gmail.com
 
 
 ## About me
@@ -10,10 +10,10 @@ I am 19 years old. My goal is to become a front-end developer. I actively study 
 
 I like to study English, do sports and learn something new.
 ## Skills
-* HTML
-* CSS
-* Git
-* VS Code
+- HTML
+- CSS
+- Git
+- VS Code
 
 
 ## Experience
