@@ -4,8 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV | Mikhail Vavilin</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about-me" class="nav-link">About me</a></li>
+                    <li><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#example-code" class="nav-link">Example code</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#edu-courses" class="nav-link">Education & Courses</a></li>
+                    <li><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <section class="section-item about-me">
+                <img class="avatar" src="./avavtar.png" alt="Author's avatar">
+                <h1 id="about-me" class="section-title">Hi, I'm Mikhail Vavilin!</h1>
+                <p>I am 19 years old. I am a novice <span>Frontend Developer</span>. I like doing web programming, sports and learning new things.</p>
+            </section>
+            <section class="section-item contacts">
+                <h2 id="contacts" class="section-title">Contacts</h2>
+                <ul>
+                    <li>Location: Penza, Russia</li>
+                    <li>Phone: +7 (964) 865 22 72</li>
+                    <li>Gmail: michaelvavilin@gmail.com</li>
+                    <li>Telegram: @mikhailvavilin</li>
+                    <li>GitHub: mvavilin</li>
+                    <li>Discord: Mango19#7293</li>
+                </ul>
+            </section>
+            <section class="section-item skills">
+                <h2 id="skills" class="section-title">Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript (basics)</li>
+                    <li>VS Code</li>
+                    <li>Git, GitHub</li>
+                    <li>Figma</li>
+                </ul>
+            </section>
+            <section class="section-item example-code">
+                <h2 id="example-code" class="section-title">Example code</h2>
+                <pre>
+                    <code>
+let result = prompt('17 + 9 * 7 = ?', '');
+
+if (result == 80) {
+alert('Right!');
+} else {
+alert('Try again');
+}
+                    </code>
+                </pre>
+            </section>
+            <section class="section-item projects">
+                <h2 id="projects" class="section-title">Projects</h2>
+                <p>My <a href="https://mvavilin.github.io/rsschool-cv/">resume</a>, compiled as part of my studies at RS School.</p>
+            </section>
+            <section class="section-item education">
+                <h2 id="edu-courses" class="section-title">Education & Courses</h2>
+                <table class="table">
+                        <tr>
+                            <td>December, 2022 - now</td>
+                            <td>JavaScript/Front-end. Stage 0</td>
+                            <td>The Rolling Scopes</td>
+                        </tr>
+                        <tr>
+                            <td>2019 - now</td>
+                            <td>Programming in computer systems</td>
+                            <td>Penza State University</td>
+                        </tr>
+                </table>
+            </section>
+            <section class="section-item languages">
+                <h2 id="languages" class="section-title">Languages</h2>
+                <ul>
+                    <li>Russian (native)</li>
+                    <li>English (A1)</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="github-link"><a href="https://github.com/mvavilin">@mvavilin</a></div>
+            <div class="year"><p>&copy; 2022</p></div>
+            <div class="rs-school-logo-link"><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="RS School logo"></a></div>
+        </div>
+    </footer>
 </body>
 </html>
