@@ -71,4 +71,25 @@ function checkResult() {
 }
 ```
 ## Projects
+* [tic-tac-toe](https://mvavilin.github.io/tic-tac-toe/) (deploy)
+* [basket-shop](https://basket-shop-sepia.vercel.app/) (deploy)
+* [linear-binary](https://github.com/mvavilin/linear-binary) (repository)
 ## Education & English Level
+* **2019–2023**  
+  Serdobsk Branch of Penza State University  
+  *Qualification: Software Technician*  
+
+* **2023**  
+  JS/FE PRE-SCHOOL 2022Q4 (JavaScript)  
+  *[Certificate](https://app.rs.school/certificate/kdioc79h)*  
+
+* **2024–Present**  
+  Penza State University  
+  *Qualification: Software Engineer*  
+
+* **2025–Present**  
+  Center for Project Creativity, PSU  
+  *Project-focused training*  
+
+**A1 (Beginner)**  
+Basic reading/writing skills.  
