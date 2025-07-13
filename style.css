@@ -10,6 +10,10 @@
   font-style: normal;
 }
 
+:root {
+  --dark-color: #131313;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 10px;
@@ -22,11 +26,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: "Inter", sans-serif;
+  line-height: 1.5;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
+  color: var(--dark-color);
 
   background: radial-gradient(circle at left center, rgba(95, 168, 211, 1) 0%, rgba(202, 233, 245, 1) 25%, rgba(255, 255, 255, 1) 50%);
 }
@@ -39,13 +45,15 @@ body {
 
 .title {
   font-family: 'Konstant Grotesk';
-  font-weight: 500;
+  font-weight: bold;
   font-size: 4rem;
   text-align: center;
 }
 
 .nav-list {
   font-family: 'Konstant Grotesk';
+  font-weight: bold;
+  font-size: 2rem;
 
   display: flex;
   justify-content: space-between;
@@ -58,7 +66,7 @@ body {
 }
 
 .nav-link {
-  color: black;
+  color: var(--dark-color);
   text-decoration: none;
   transition: 0.3s;
 }
@@ -66,4 +74,24 @@ body {
 .nav-link:hover {
   color: gray;
   text-decoration: underline;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: 'Konstant Grotesk';
+  font-weight: bold;
+  text-transform: uppercase;
+
+  border-bottom: .3rem solid var(--dark-color);
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+.text {
+  text-align: justify;
 }
