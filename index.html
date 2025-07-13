@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Mikhail Vavilin, Frontend Developer</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Mikhail Vavilin, <span class="highlighter">Frontend Developer</span></h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#summary" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contact Information</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code Example</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education & English Level</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <main class="main main-container">
+
+            <div class="photo">
+                <div class="photo-card">
+                    <img class="photo-img" src="assets/img/personal_photo.jpg" alt="Personal photo">
+                </div>
+            </div>
+
+            <section id="summary" class="section summary">
+                <div class="section-title">
+                    <h2 class="subtitle">About Me</h2>
+                    <div class="number">01</div>
+                </div>
+                <p class="text">My name is Mikhail Vavilin. I am 22 years old. I am a student at Penza State
+                    University, studying to
+                    be a software engineer. In my spare time I do frontend development. I am interested in cycling.</p>
+            </section>
+
+            <section id="contacts" class="section contacts">
+                <div class="section-title">
+                    <h2 class="subtitle">Contact Information</h2>
+                    <div class="number">02</div>
+                </div>
+                <ul class="contacts-list">
+                    <li class="contacts-item"><a class="contacts-link" href="https://t.me/mvavilin"
+                            target="_blank">Telegram</a></li>
+                    <li class="contacts-item"><a class="contacts-link"
+                            href="https://discordapp.com/users/1383722446921666681" target="_blank">Discord</a></li>
+                    <li class="contacts-item"><a class="contacts-link" href="https://github.com/mvavilin"
+                            target="_blank">GitHub</a></li>
+                </ul>
+            </section>
+
+            <section id="skills" class="section skills">
+                <div class="section-title">
+                    <h2 class="subtitle">Skills</h2>
+                    <div class="number">03</div>
+                </div>
+                <ul class="skills-list">
+                    <li class="skills-item">HTML</li>
+                    <li class="skills-item">CSS/SASS</li>
+                    <li class="skills-item">JS</li>
+                    <li class="skills-item">Git/GitHub</li>
+                    <li class="skills-item">Figma</li>
+                    <li class="skills-item">VS Code</li>
+                    <li class="skills-item">Tailwind CSS</li>
+                    <li class="skills-item">shadcn/ui</li>
+                    <li class="skills-item">TypeScript</li>
+                    <li class="skills-item">React</li>
+                    <li class="skills-item">Vite</li>
+                    <li class="skills-item">Versel</li>
+                    <li class="skills-item">С</li>
+                </ul>
+            </section>
+
+            <section id="code" class="section code">
+                <div class="section-title">
+                    <h2 class="subtitle">Code Example</h2>
+                    <div class="number">04</div>
+                </div>
+                <p class="text"><a class="code-link" href="https://github.com/mvavilin/tic-tac-toe.git"
+                        target="_blank">tic-tac-toe</a>
+                </p>
+                <pre class="code-container"><code class="code-source">const message = document.getElementById("message");
+
+let currentPlayer = "X";
+let gameActive = true;
+let gameState = ["", "", "", "", "", "", "", "", ""];
+
+const winningConditions = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6],
+];
+
+function checkResult() {
+  let roundWon = false;
+
+  for (let i = 0; i &lt; winningConditions.length; i++) {
+    const [a, b, c] = winningConditions[i];
+    if (gameState[a] === "" || gameState[b] === "" || gameState[c] === "") {
+      continue;
+    }
+    if (gameState[a] === gameState[b] && gameState[a] === gameState[c]) {
+      roundWon = true;
+      break;
+    }
+  }
+
+  if (roundWon) {
+    message.textContent = `Игрок ${currentPlayer} выиграл!`;
+    gameActive = false;
+    return;
+  }
+
+  if (!gameState.includes("")) {
+    message.textContent = "Ничья!";
+    gameActive = false;
+    return;
+  }
+
+  currentPlayer = currentPlayer === "X" ? "O" : "X";
+}</code></pre>
+            </section>
+
+            <section id="projects" class="section projects">
+                <div class="section-title">
+                    <h2 class="subtitle">Projects</h2>
+                    <div class="number">05</div>
+                </div>
+                <ul class="projects-list">
+                    <li class="projects-item">
+                        <a href="https://mvavilin.github.io/tic-tac-toe/" target="_blank" class="projects-link">
+                            <img src="assets/img/tic-tac-toe.png" alt="tic-tac-toe" class="projects-img">
+                            <h3 class="projects-title">tic-tac-toe</h3>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a href="https://basket-shop-sepia.vercel.app/" target="_blank" class="projects-link">
+                            <img src="assets/img/basket-shop.png" alt="basket-shop" class="projects-img">
+                            <h3 class="projects-title">basket-shop</h3>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a href="https://github.com/mvavilin/linear-binary" target="_blank" class="projects-link">
+                            <img src="assets/img/linear-binary.png" alt="linear-binary" class="projects-img">
+                            <h3 class="projects-title">linear-binary</h3>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="education" class="section education">
+                <div class="section-title">
+                    <h2 class="subtitle">Education & English Level</h2>
+                    <div class="number">06</div>
+                </div>
+                <ul class="education-list">
+                    <li class="education-item">
+                        <h4 class="education-title">2019 &ndash; 2023</h4>
+                        <p>Serdobsk Branch of Penza State University</p>
+                        <p class="education-desc">Qualification: Software Technician</p>
+                    </li>
+                    <li class="education-item">
+                        <h4 class="education-title">2023</h4>
+                        <p>JS/FE PRE-SCHOOL 2022Q4 (JavaScript)</p>
+                        <p class="education-desc"><a href="https://app.rs.school/certificate/kdioc79h"
+                                target="_blank">Certificate</a></p>
+                    </li>
+                    <li class="education-item">
+                        <h4 class="education-title">2024 &ndash; Present</h4>
+                        <p>Penza State University</p>
+                        <p class="education-desc">Qualification: Software Engineer</p>
+                    </li>
+                    <li class="education-item">
+                        <h4 class="education-title">2025 &ndash; Present</h4>
+                        <p>Center for Project Creativity, PSU</p>
+                        <p class="education-desc">Project-focused training</p>
+                    </li>
+                </ul>
+                <h4 class="education-title">A1 (Beginner)</h4>
+                <p class="text">Basic reading/writing skills.</p>
+            </section>
+        </main>
+    </div>
+    <div class="container">
+        <footer class="footer">
+            <ul class="footer-list">
+                <li class="footer-item">Created by <a class="footer-link" href="https://github.com/mvavilin"
+                        target="_blank">@mvavilin</a></li>
+                <li class="footer-item">2025</li>
+                <li class="footer-item"><a class="footer-link" href="https://rs.school/courses/javascript-ru"
+                        target="_blank"><img class="footer-img" src="assets/icons/rs-school-logo.svg"
+                            alt="footer-img"></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
