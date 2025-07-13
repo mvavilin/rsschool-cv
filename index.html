@@ -42,6 +42,14 @@
                     <h2 class="subtitle">Contact Information</h2>
                     <div class="number">02</div>
                 </div>
+                <ul class="contacts-list">
+                    <li class="contacts-item"><a class="contacts-link" href="https://t.me/mvavilin"
+                            target="_blank">Telegram</a></li>
+                    <li class="contacts-item"><a class="contacts-link"
+                            href="https://discordapp.com/users/1383722446921666681" target="_blank">Discord</a></li>
+                    <li class="contacts-item"><a class="contacts-link" href="https://github.com/mvavilin"
+                            target="_blank">GitHub</a></li>
+                </ul>
             </section>
 
             <section id="skills" class="skills">
@@ -49,6 +57,21 @@
                     <h2 class="subtitle">Skills</h2>
                     <div class="number">03</div>
                 </div>
+                <ul class="skills-list">
+                    <li class="skills-item">HTML</li>
+                    <li class="skills-item">CSS/SASS</li>
+                    <li class="skills-item">JS</li>
+                    <li class="skills-item">Git/GitHub</li>
+                    <li class="skills-item">Figma</li>
+                    <li class="skills-item">VS Code</li>
+                    <li class="skills-item">Tailwind CSS</li>
+                    <li class="skills-item">shadcn/ui</li>
+                    <li class="skills-item">TypeScript</li>
+                    <li class="skills-item">React</li>
+                    <li class="skills-item">Vite</li>
+                    <li class="skills-item">Versel</li>
+                    <li class="skills-item">С</li>
+                </ul>
             </section>
 
             <section id="code" class="code">
@@ -56,6 +79,54 @@
                     <h2 class="subtitle">Code Example</h2>
                     <div class="number">04</div>
                 </div>
+                <p class="text"><a class="code-link" href="https://github.com/mvavilin/tic-tac-toe.git"
+                        target="_blank">tic-tac-toe</a>
+                </p>
+                <pre class="code-container"><code class="code-source">const message = document.getElementById("message");
+
+let currentPlayer = "X";
+let gameActive = true;
+let gameState = ["", "", "", "", "", "", "", "", ""];
+
+const winningConditions = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6],
+];
+
+function checkResult() {
+  let roundWon = false;
+
+  for (let i = 0; i &lt; winningConditions.length; i++) {
+    const [a, b, c] = winningConditions[i];
+    if (gameState[a] === "" || gameState[b] === "" || gameState[c] === "") {
+      continue;
+    }
+    if (gameState[a] === gameState[b] && gameState[a] === gameState[c]) {
+      roundWon = true;
+      break;
+    }
+  }
+
+  if (roundWon) {
+    message.textContent = `Игрок ${currentPlayer} выиграл!`;
+    gameActive = false;
+    return;
+  }
+
+  if (!gameState.includes("")) {
+    message.textContent = "Ничья!";
+    gameActive = false;
+    return;
+  }
+
+  currentPlayer = currentPlayer === "X" ? "O" : "X";
+}</code></pre>
             </section>
 
             <section id="projects" class="projects">
@@ -63,6 +134,26 @@
                     <h2 class="subtitle">Projects</h2>
                     <div class="number">05</div>
                 </div>
+                <ul class="projects-list">
+                    <li class="projects-item">
+                        <a href="https://mvavilin.github.io/tic-tac-toe/" target="_blank" class="projects-link">
+                            <img src="assets/img/tic-tac-toe.png" alt="tic-tac-toe" class="projects-img">
+                            <h3 class="projects-title">tic-tac-toe</h3>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a href="https://basket-shop-sepia.vercel.app/" target="_blank" class="projects-link">
+                            <img src="assets/img/basket-shop.png" alt="basket-shop" class="projects-img">
+                            <h3 class="projects-title">basket-shop</h3>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a href="https://github.com/mvavilin/linear-binary" target="_blank" class="projects-link">
+                            <img src="assets/img/linear-binary.png" alt="linear-binary" class="projects-img">
+                            <h3 class="projects-title">linear-binary</h3>
+                        </a>
+                    </li>
+                </ul>
             </section>
 
             <section id="education" class="education">
